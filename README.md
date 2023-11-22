@@ -1,4 +1,4 @@
-# <h1 align="center">Radar de Estrada</h1>
+# <h1 align="center">Radar de Estrada com Visão Computacional Clássica</h1>
 
 Este projeto tem como objetivo simular um radar de estrada efetuando a contagem de carros passantes e o cálculo da velocidade instantânea a cada frame utilizando apenas ferramentas clássicas de visão computacional, ou seja, sem fazer uso de machine learning.
 
