@@ -55,8 +55,6 @@ while True:
 
     hull = [cv.convexHull(c) for c in contours]
 
-    #DESENHANDO CONTORNOS
-    # cv.drawContours(frame[320:700,600:1100], hull, -1, (0, 255, 0), 3)
 
     #LINHA PARA PARAR CONTAGEM
     lineypos = 150
@@ -144,9 +142,6 @@ while True:
             pontos_current = np.array([cxy_new[0][i], cxy_new[1][i]]).reshape(1, -1)
             distances, indices = nbrs.kneighbors(pontos_current)
             
-            #DESENHA A LINHA ENTRE CENTROIDS USANDO A DISTÂNCIA ENTRE ELES COMO BASE
-            coordenadas_x_old = int(cxy_old[0][i])
-            coordenadas_y_old = int(cxy_old[1][i])
             coordenadas_x_new = int(cxy_new[0][i])
             coordenadas_y_new = int(cxy_new[1][i])
             
